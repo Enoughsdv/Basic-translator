@@ -1,7 +1,7 @@
 import sys
 import os
+
 from deep_translator import GoogleTranslator
-thing = ""
 
 os.system("cls")
 
@@ -23,15 +23,9 @@ translated = GoogleTranslator(source='auto', target=target).translate(text_trans
 
 os.system("cls")
 
-#Ignore kekw
-if(target == "es"):
-	thing = "Spanish"
-if(target == "en"):
-	thing = "English"
-
 print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
 print(" ")
-print(f" Target: {target} ({thing})")
+print(f" Target: {target}")
 print(f" Text to be translated: {text_translate}")
 print(" ")
 print(" ")
