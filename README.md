@@ -1,7 +1,7 @@
 # Basic translator in Python
 It is a basic translator that I made using [DeepL](https://github.com/nidhaloff/deep-translator).
 
-###Dependencies:
+### Dependencies:
 - pip install os
 - pip install sys
 - pip install -U deep_translator
