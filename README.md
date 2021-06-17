@@ -1,5 +1,5 @@
 # Basic translator in Python
-It is a basic translator that I made using [DeepL](https://github.com/nidhaloff/deep-translator).
+It is a basic translator that I made using [Deep Translator](https://github.com/nidhaloff/deep-translator).
 
 ### Dependencies:
 - pip install os
