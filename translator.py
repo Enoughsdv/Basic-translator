@@ -2,8 +2,13 @@ import sys
 import os
 
 from deep_translator import GoogleTranslator
+from sys import platform
 
-os.system("cls")
+if platform == "linux" or platform == "linux2":
+	os.system("clear")
+
+if platform == "win32":
+	os.system("cls")
 
 print("    Basic translator  ")
 print(" ")
@@ -19,9 +24,13 @@ print(" #Enter the text to be translated")
 
 text_translate = input(" Text: ")
 
-translated = GoogleTranslator(source='auto', target=target).translate(text_translate)
+translated = GoogleTranslator(source="auto", target=target).translate(text_translate)
 
-os.system("cls")
+if platform == "linux":
+	os.system("clear")
+
+if platform == "win32":
+	os.system("cls")
 
 print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
 print(" ")
