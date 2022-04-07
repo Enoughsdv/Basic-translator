@@ -1,13 +1,8 @@
-import sys
 import os
 
 from deep_translator import GoogleTranslator
-from sys import platform
 
-if platform == "win32":
-	os.system("cls")
-   else:
-	os.system("clear")
+os.system("cls || clear")
 
 print("    Basic translator  ")
 print(" ")
@@ -25,10 +20,7 @@ text_translate = input(" Text: ")
 
 translated = GoogleTranslator(source="auto", target=target).translate(text_translate)
 
-if platform == "win32":
-	os.system("cls")
-   else:
-	os.system("clear")
+os.system("cls || clear")
 
 print("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
 print(" ")
